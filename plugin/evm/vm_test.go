@@ -56,7 +56,7 @@ import (
 
 var (
 	testNetworkID    uint32 = 10
-	testCChainID            = ids.ID{'c', 'c', 'h', 'a', 'i', 'n', 't', 'e', 's', 't'}
+	testAXCChainID            = ids.ID{'c', 'c', 'h', 'a', 'i', 'n', 't', 'e', 's', 't'}
 	testXChainID            = ids.ID{'t', 'e', 's', 't', 'x'}
 	nonExistentID           = ids.ID{'F'}
 	testKeys         []*crypto.PrivateKeySECP256K1R
@@ -127,20 +127,20 @@ func NewContext() *snow.Context {
 	ctx := snow.DefaultContextTest()
 	ctx.NodeID = ids.GenerateTestNodeID()
 	ctx.NetworkID = testNetworkID
-	ctx.ChainID = testCChainID
+	ctx.ChainID = testAXCChainID
 	ctx.AVAXAssetID = testAvaxAssetID
 	ctx.XChainID = testXChainID
 	ctx.SharedMemory = testSharedMemory()
 	aliaser := ctx.BCLookup.(ids.Aliaser)
-	_ = aliaser.Alias(testCChainID, "C")
-	_ = aliaser.Alias(testCChainID, testCChainID.String())
+	_ = aliaser.Alias(testAXCChainID, "C")
+	_ = aliaser.Alias(testAXCChainID, testAXCChainID.String())
 	_ = aliaser.Alias(testXChainID, "X")
 	_ = aliaser.Alias(testXChainID, testXChainID.String())
 	ctx.SNLookup = &snLookup{
 		chainsToSubnet: map[ids.ID]ids.ID{
 			constants.PlatformChainID: constants.PrimaryNetworkID,
 			testXChainID:              constants.PrimaryNetworkID,
-			testCChainID:              constants.PrimaryNetworkID,
+			testAXCChainID:              constants.PrimaryNetworkID,
 		},
 	}
 	return ctx
@@ -3088,7 +3088,7 @@ func TestConfigureLogLevel(t *testing.T) {
 		},
 		{
 			name:        "Invalid log level",
-			logConfig:   "{\"log-level\": \"cchain\"}",
+			logConfig:   "{\"log-level\": \"axcchain\"}",
 			genesisJSON: genesisJSONApricotPhase3,
 			upgradeJSON: "",
 			expectedErr: "failed to initialize logger due to",
