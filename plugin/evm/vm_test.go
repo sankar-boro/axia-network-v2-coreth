@@ -132,7 +132,7 @@ func NewContext() *snow.Context {
 	ctx.XChainID = testXChainID
 	ctx.SharedMemory = testSharedMemory()
 	aliaser := ctx.BCLookup.(ids.Aliaser)
-	_ = aliaser.Alias(testAXCChainID, "C")
+	_ = aliaser.Alias(testAXCChainID, "AXC")
 	_ = aliaser.Alias(testAXCChainID, testAXCChainID.String())
 	_ = aliaser.Alias(testXChainID, "X")
 	_ = aliaser.Alias(testXChainID, testXChainID.String())

@@ -55,9 +55,9 @@ func NewClient(uri, chain string) Client {
 	}
 }
 
-// NewAXCChainClient returns a Client for interacting with the C Chain
+// NewAXCChainClient returns a Client for interacting with the AXC Chain
 func NewAXCChainClient(uri string) Client {
-	return NewClient(uri, "C")
+	return NewClient(uri, "AXC")
 }
 
 // IssueTx issues a transaction to a node and returns the TxID
