@@ -35,7 +35,7 @@ jobs:
       - name: change axia dep
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
-          go mod edit -replace github.com/sankar-boro/axia=./axia
+          go mod edit -replace github.com/sankar-boro/axia-network-v2=./axia
           go mod tidy
           go clean -modcache # avoid conflicts with the golangci-lint-action cache
       - name: golangci-lint
@@ -67,7 +67,7 @@ jobs:
     - name: change axia dep
       if: ${{ github.event_name == 'workflow_dispatch' }}
       run: |
-        go mod edit -replace github.com/sankar-boro/axia=./axia
+        go mod edit -replace github.com/sankar-boro/axia-network-v2=./axia
         go mod tidy
     - run: go mod download
       shell: bash
@@ -100,7 +100,7 @@ jobs:
     - name: change axia dep
       if: ${{ github.event_name == 'workflow_dispatch' }}
       run: |
-        go mod edit -replace github.com/sankar-boro/axia=./axia
+        go mod edit -replace github.com/sankar-boro/axia-network-v2=./axia
         go mod tidy
     - run: go mod download
       shell: bash
@@ -131,7 +131,7 @@ jobs:
     - name: change axia dep
       if: ${{ github.event_name == 'workflow_dispatch' }}
       run: |
-        go mod edit -replace github.com/sankar-boro/axia=./axia
+        go mod edit -replace github.com/sankar-boro/axia-network-v2=./axia
         go mod tidy
     - name: prepare axia directory for docker copy
       if: ${{ github.event_name == 'workflow_dispatch' }}

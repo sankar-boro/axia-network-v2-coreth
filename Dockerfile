@@ -8,7 +8,7 @@ ARG AXIA_VERSION
 RUN mkdir -p $GOPATH/src/github.com/sankar-boro
 WORKDIR $GOPATH/src/github.com/sankar-boro
 
-RUN git clone -b $AXIA_VERSION --single-branch https://github.com/sankar-boro/axia.git
+RUN git clone -b $AXIA_VERSION --single-branch https://github.com/sankar-boro/axia-network-v2.git
 
 # Copy coreth repo into desired location
 COPY . coreth
