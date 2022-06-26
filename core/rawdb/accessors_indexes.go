@@ -30,9 +30,9 @@ import (
 	"bytes"
 	"math/big"
 
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/ethdb"
-	"github.com/ava-labs/coreth/params"
+	"github.com/sankar-boro/coreth/core/types"
+	"github.com/sankar-boro/coreth/ethdb"
+	"github.com/sankar-boro/coreth/params"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rlp"

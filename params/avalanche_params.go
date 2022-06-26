@@ -6,7 +6,7 @@ package params
 import (
 	"math/big"
 
-	"github.com/ava-labs/axia/utils/units"
+	"github.com/sankar-boro/axia/utils/units"
 )
 
 // Minimum Gas Price

@@ -11,8 +11,8 @@ This chain implements the Ethereum Virtual Machine and supports Solidity smart c
 Coreth is a dependency of Axia which is used to implement the EVM based Virtual Machine for the Axia AXC-Chain. In order to run with a local version of Coreth, users must update their Coreth dependency within Axia to point to their local Coreth directory. If Coreth and Axia are at the standard location within your GOPATH, this will look like the following:
 
 ```bash
-cd $GOPATH/src/github.com/ava-labs/axia
-go mod edit -replace github.com/ava-labs/coreth=../coreth
+cd $GOPATH/src/github.com/sankar-boro/axia
+go mod edit -replace github.com/sankar-boro/coreth=../coreth
 ```
 
 Note: the AXC-Chain originally ran in a separate process from the main Axia process and communicated with it over a local gRPC connection. When this was the case, Axia's build script would download Coreth, compile it, and place the binary into the `axia/build/plugins` directory.

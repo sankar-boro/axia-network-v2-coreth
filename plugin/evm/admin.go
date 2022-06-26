@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ava-labs/axia/api"
-	"github.com/ava-labs/axia/utils/profiler"
+	"github.com/sankar-boro/axia/api"
+	"github.com/sankar-boro/axia/utils/profiler"
 	"github.com/ethereum/go-ethereum/log"
 )
 

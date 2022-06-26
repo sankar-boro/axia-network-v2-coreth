@@ -27,8 +27,8 @@
 package runtime
 
 import (
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/vm"
+	"github.com/sankar-boro/coreth/core"
+	"github.com/sankar-boro/coreth/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

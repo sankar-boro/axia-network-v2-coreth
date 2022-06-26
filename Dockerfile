@@ -5,20 +5,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends bash=5.0-4 git=
 
 ARG AXIA_VERSION
 
-RUN mkdir -p $GOPATH/src/github.com/ava-labs
-WORKDIR $GOPATH/src/github.com/ava-labs
+RUN mkdir -p $GOPATH/src/github.com/sankar-boro
+WORKDIR $GOPATH/src/github.com/sankar-boro
 
-RUN git clone -b $AXIA_VERSION --single-branch https://github.com/ava-labs/axia.git
+RUN git clone -b $AXIA_VERSION --single-branch https://github.com/sankar-boro/axia.git
 
 # Copy coreth repo into desired location
 COPY . coreth
 
 # Set the workdir to Axia and update coreth dependency to local version
-WORKDIR $GOPATH/src/github.com/ava-labs/axia
+WORKDIR $GOPATH/src/github.com/sankar-boro/axia
 # Run go mod download here to improve caching of Axia specific depednencies
 RUN go mod download
 # Replace the coreth dependency
-RUN go mod edit -replace github.com/ava-labs/coreth=../coreth
+RUN go mod edit -replace github.com/sankar-boro/coreth=../coreth
 RUN go mod download && go mod tidy -compat=1.17
 
 # Build the Axia binary with local version of coreth.
@@ -35,6 +35,6 @@ RUN mkdir -p /axia/build
 WORKDIR /axia/build
 
 # Copy the executables into the container
-COPY --from=builder /go/src/github.com/ava-labs/axia/build .
+COPY --from=builder /go/src/github.com/sankar-boro/axia/build .
 
 CMD [ "./axia" ]

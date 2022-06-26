@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/axia/ids"
+	"github.com/sankar-boro/axia/ids"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
@@ -20,10 +20,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/plugin/evm/message"
+	"github.com/sankar-boro/coreth/core"
+	"github.com/sankar-boro/coreth/core/types"
+	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/coreth/plugin/evm/message"
 )
 
 func fundAddressByGenesis(addrs []common.Address) (string, error) {

@@ -10,12 +10,12 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/rpc"
-	"github.com/ava-labs/coreth/trie"
+	"github.com/sankar-boro/coreth/consensus"
+	"github.com/sankar-boro/coreth/core/state"
+	"github.com/sankar-boro/coreth/core/types"
+	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/coreth/rpc"
+	"github.com/sankar-boro/coreth/trie"
 	"github.com/ethereum/go-ethereum/common"
 )
 

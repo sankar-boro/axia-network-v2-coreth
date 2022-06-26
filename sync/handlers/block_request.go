@@ -8,12 +8,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/ava-labs/axia/codec"
-	"github.com/ava-labs/axia/ids"
+	"github.com/sankar-boro/axia/codec"
+	"github.com/sankar-boro/axia/ids"
 
-	"github.com/ava-labs/coreth/peer"
-	"github.com/ava-labs/coreth/plugin/evm/message"
-	"github.com/ava-labs/coreth/sync/handlers/stats"
+	"github.com/sankar-boro/coreth/peer"
+	"github.com/sankar-boro/coreth/plugin/evm/message"
+	"github.com/sankar-boro/coreth/sync/handlers/stats"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 )

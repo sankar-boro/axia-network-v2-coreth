@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ava-labs/axia/cache"
-	"github.com/ava-labs/axia/ids"
+	"github.com/sankar-boro/axia/cache"
+	"github.com/sankar-boro/axia/ids"
 	"github.com/ethereum/go-ethereum/log"
 )
 

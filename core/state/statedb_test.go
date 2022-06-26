@@ -39,9 +39,9 @@ import (
 	"testing"
 	"testing/quick"
 
-	"github.com/ava-labs/coreth/core/rawdb"
-	"github.com/ava-labs/coreth/core/state/snapshot"
-	"github.com/ava-labs/coreth/core/types"
+	"github.com/sankar-boro/coreth/core/rawdb"
+	"github.com/sankar-boro/coreth/core/state/snapshot"
+	"github.com/sankar-boro/coreth/core/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 )

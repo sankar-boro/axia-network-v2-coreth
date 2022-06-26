@@ -31,8 +31,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/ethdb"
+	"github.com/sankar-boro/coreth/core/types"
+	"github.com/sankar-boro/coreth/ethdb"
 	"github.com/ethereum/go-ethereum/common"
 )
 

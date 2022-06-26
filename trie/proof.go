@@ -31,8 +31,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ava-labs/coreth/ethdb"
-	"github.com/ava-labs/coreth/ethdb/memorydb"
+	"github.com/sankar-boro/coreth/ethdb"
+	"github.com/sankar-boro/coreth/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rlp"

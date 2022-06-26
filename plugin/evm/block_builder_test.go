@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/coreth/params"
+	"github.com/sankar-boro/coreth/params"
 
-	"github.com/ava-labs/axia/snow"
+	"github.com/sankar-boro/axia/snow"
 )
 
 func TestBlockBuilderShutsDown(t *testing.T) {

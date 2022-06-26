@@ -7,8 +7,8 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/ava-labs/axia/utils"
-	"github.com/ava-labs/axia/utils/units"
+	"github.com/sankar-boro/axia/utils"
+	"github.com/sankar-boro/axia/utils/units"
 
 	"github.com/stretchr/testify/assert"
 )

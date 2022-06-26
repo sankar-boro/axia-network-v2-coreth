@@ -6,10 +6,10 @@ package evm
 import (
 	"fmt"
 
-	"github.com/ava-labs/axia/ids"
-	"github.com/ava-labs/axia/utils/constants"
-	"github.com/ava-labs/axia/utils/crypto"
-	"github.com/ava-labs/axia/utils/formatting/address"
+	"github.com/sankar-boro/axia/ids"
+	"github.com/sankar-boro/axia/utils/constants"
+	"github.com/sankar-boro/axia/utils/crypto"
+	"github.com/sankar-boro/axia/utils/formatting/address"
 	"github.com/ethereum/go-ethereum/common"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 )

@@ -29,9 +29,9 @@ package ethconfig
 import (
 	"time"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/eth/gasprice"
-	"github.com/ava-labs/coreth/miner"
+	"github.com/sankar-boro/coreth/core"
+	"github.com/sankar-boro/coreth/eth/gasprice"
+	"github.com/sankar-boro/coreth/miner"
 	"github.com/ethereum/go-ethereum/common"
 )
 

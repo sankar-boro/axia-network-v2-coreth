@@ -6,11 +6,11 @@ package evm
 import (
 	"fmt"
 
-	"github.com/ava-labs/axia/database"
-	"github.com/ava-labs/axia/snow/engine/snowman/block"
+	"github.com/sankar-boro/axia/database"
+	"github.com/sankar-boro/axia/snow/engine/snowman/block"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/plugin/evm/message"
+	"github.com/sankar-boro/coreth/core"
+	"github.com/sankar-boro/coreth/plugin/evm/message"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 )

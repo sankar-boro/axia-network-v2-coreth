@@ -4,8 +4,8 @@
 package peer
 
 import (
-	"github.com/ava-labs/axia/ids"
-	"github.com/ava-labs/coreth/plugin/evm/message"
+	"github.com/sankar-boro/axia/ids"
+	"github.com/sankar-boro/coreth/plugin/evm/message"
 )
 
 var _ message.ResponseHandler = &waitingResponseHandler{}
