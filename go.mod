@@ -1,4 +1,4 @@
-module github.com/sankar-boro/coreth
+module github.com/sankar-boro/axia-network-v2-coreth
 
 go 1.17
 
