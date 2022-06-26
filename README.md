@@ -1,6 +1,6 @@
 # Coreth and the AXC-Chain
 
-[Avalanche](https://docs.avax.network/learn/platform-overview) is a network composed of multiple blockchains.
+[Axia](https://docs.avax.network/learn/platform-overview) is a network composed of multiple blockchains.
 Each blockchain is an instance of a Virtual Machine (VM), much like an object in an object-oriented language is an instance of a class.
 That is, the VM defines the behavior of the blockchain.
 Coreth (from core Ethereum) is the [Virtual Machine (VM)](https://docs.avax.network/learn/platform-overview#virtual-machines) that defines the Contract Chain (AXC-Chain).
@@ -8,14 +8,14 @@ This chain implements the Ethereum Virtual Machine and supports Solidity smart c
 
 ## Building
 
-Coreth is a dependency of AvalancheGo which is used to implement the EVM based Virtual Machine for the Avalanche AXC-Chain. In order to run with a local version of Coreth, users must update their Coreth dependency within AvalancheGo to point to their local Coreth directory. If Coreth and AvalancheGo are at the standard location within your GOPATH, this will look like the following:
+Coreth is a dependency of Axia which is used to implement the EVM based Virtual Machine for the Axia AXC-Chain. In order to run with a local version of Coreth, users must update their Coreth dependency within Axia to point to their local Coreth directory. If Coreth and Axia are at the standard location within your GOPATH, this will look like the following:
 
 ```bash
-cd $GOPATH/src/github.com/ava-labs/avalanchego
+cd $GOPATH/src/github.com/ava-labs/axia
 go mod edit -replace github.com/ava-labs/coreth=../coreth
 ```
 
-Note: the AXC-Chain originally ran in a separate process from the main AvalancheGo process and communicated with it over a local gRPC connection. When this was the case, AvalancheGo's build script would download Coreth, compile it, and place the binary into the `avalanchego/build/plugins` directory.
+Note: the AXC-Chain originally ran in a separate process from the main Axia process and communicated with it over a local gRPC connection. When this was the case, Axia's build script would download Coreth, compile it, and place the binary into the `axia/build/plugins` directory.
 
 ## API
 
@@ -27,28 +27,28 @@ The AXC-Chain supports the following API namespaces:
 - `debug`
 
 Only the `eth` namespace is enabled by default. 
-To enable the other namespaces see the instructions for passing the AXC-Chain config to AvalancheGo [here.](https://docs.avax.network/nodes/maintain/chain-config-flags/#axc-chain-configs)
-Full documentation for the AXC-Chain's API can be found [here.](https://docs.avax.network/apis/avalanchego/apis/axc-chain/)
+To enable the other namespaces see the instructions for passing the AXC-Chain config to Axia [here.](https://docs.avax.network/nodes/maintain/chain-config-flags/#axc-chain-configs)
+Full documentation for the AXC-Chain's API can be found [here.](https://docs.avax.network/apis/axia/apis/axc-chain/)
 
 ## Compatibility
 
-The AXC-Chain is compatible with almost all Ethereum tooling, including [Remix,](https://docs.avax.network/build/tutorials/smart-contracts/deploy-a-smart-contract-on-avalanche-using-remix-and-metamask) [Metamask](https://docs.avax.network/build/tutorials/smart-contracts/deploy-a-smart-contract-on-avalanche-using-remix-and-metamask) and [Truffle.](https://docs.avax.network/build/tutorials/smart-contracts/using-truffle-with-the-avalanche-axc-chain)
+The AXC-Chain is compatible with almost all Ethereum tooling, including [Remix,](https://docs.avax.network/build/tutorials/smart-contracts/deploy-a-smart-contract-on-axia-using-remix-and-metamask) [Metamask](https://docs.avax.network/build/tutorials/smart-contracts/deploy-a-smart-contract-on-axia-using-remix-and-metamask) and [Truffle.](https://docs.avax.network/build/tutorials/smart-contracts/using-truffle-with-the-axia-axc-chain)
 
-## Differences Between Avalanche AXC-Chain and Ethereum
+## Differences Between Axia AXC-Chain and Ethereum
 
 ### Atomic Transactions
 
-As a network composed of multiple blockchains, Avalanche uses *atomic transactions* to move assets between chains. Coreth modifies the Ethereum block format by adding an *ExtraData* field, which contains the atomic transactions.
+As a network composed of multiple blockchains, Axia uses *atomic transactions* to move assets between chains. Coreth modifies the Ethereum block format by adding an *ExtraData* field, which contains the atomic transactions.
 
-### Avalanche Native Tokens (ANTs)
+### Axia Native Tokens (ANTs)
 
-The AXC-Chain supports Avalanche Native Tokens, which are created on the Swap-Chain using precompiled contracts. These precompiled contracts *nativeAssetCall* and *nativeAssetBalance* support the same interface for ANTs as *CALL* and *BALANCE* do for AVAX with the added parameter of *assetID* to specify the asset.
+The AXC-Chain supports Axia Native Tokens, which are created on the Swap-Chain using precompiled contracts. These precompiled contracts *nativeAssetCall* and *nativeAssetBalance* support the same interface for ANTs as *CALL* and *BALANCE* do for AVAX with the added parameter of *assetID* to specify the asset.
 
 For the full documentation of precompiles for interacting with ANTs and using them in ARC-20s, see [here](https://docs.avax.network/build/references/coreth-arc20s).
 
 ### Block Timing
 
-Blocks are produced asynchronously in Snowman Consensus, so the timing assumptions that apply to Ethereum do not apply to Coreth. To support block production in an async environment, a block is permitted to have the same timestamp as its parent. Since there is no general assumption that a block will be produced every 10 seconds, smart contracts built on Avalanche should use the block timestamp instead of the block number for their timing assumptions.
+Blocks are produced asynchronously in Snowman Consensus, so the timing assumptions that apply to Ethereum do not apply to Coreth. To support block production in an async environment, a block is permitted to have the same timestamp as its parent. Since there is no general assumption that a block will be produced every 10 seconds, smart contracts built on Axia should use the block timestamp instead of the block number for their timing assumptions.
 
 A block with a timestamp more than 10 seconds in the future will not be considered valid. However, a block with a timestamp more than 10 seconds in the past will still be considered valid as long as its timestamp is greater than or equal to the timestamp of its parent block.
 

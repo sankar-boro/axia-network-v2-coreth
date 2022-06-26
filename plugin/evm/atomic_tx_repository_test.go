@@ -9,19 +9,19 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/ava-labs/avalanchego/chains/atomic"
-	"github.com/ava-labs/avalanchego/database"
-	"github.com/ava-labs/avalanchego/database/prefixdb"
-	"github.com/ava-labs/avalanchego/database/versiondb"
+	"github.com/ava-labs/axia/chains/atomic"
+	"github.com/ava-labs/axia/database"
+	"github.com/ava-labs/axia/database/prefixdb"
+	"github.com/ava-labs/axia/database/versiondb"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/ava-labs/axia/codec"
+	"github.com/ava-labs/axia/utils/wrappers"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ava-labs/avalanchego/database/memdb"
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/ava-labs/axia/database/memdb"
+	"github.com/ava-labs/axia/ids"
 )
 
 // addTxs writes [txsPerHeight] txs for heights ranging in [fromHeight, toHeight) directly to [acceptedAtomicTxDB],

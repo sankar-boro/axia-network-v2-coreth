@@ -6,11 +6,11 @@ package message
 import (
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/ids"
+	"github.com/ava-labs/axia/ids"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/ava-labs/avalanchego/snow/engine/snowman/block"
+	"github.com/ava-labs/axia/snow/engine/snowman/block"
 )
 
 var _ block.StateSummary = &SyncSummary{}

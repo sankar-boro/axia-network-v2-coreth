@@ -32,7 +32,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/ava-labs/avalanchego/utils/timer/mockable"
+	"github.com/ava-labs/axia/utils/timer/mockable"
 	"github.com/ava-labs/coreth/consensus/dummy"
 	"github.com/ava-labs/coreth/core"
 	"github.com/ava-labs/coreth/core/types"

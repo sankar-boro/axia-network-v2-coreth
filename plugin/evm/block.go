@@ -15,9 +15,9 @@ import (
 	"github.com/ava-labs/coreth/core/types"
 	"github.com/ava-labs/coreth/params"
 
-	"github.com/ava-labs/avalanchego/chains/atomic"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow/choices"
+	"github.com/ava-labs/axia/chains/atomic"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/snow/choices"
 )
 
 var (
@@ -228,7 +228,7 @@ func (b *Block) syntacticVerify() (params.Rules, error) {
 	}
 
 	header := b.ethBlock.Header()
-	rules := b.vm.chainConfig.AvalancheRules(header.Number, new(big.Int).SetUint64(header.Time))
+	rules := b.vm.chainConfig.AxiaRules(header.Number, new(big.Int).SetUint64(header.Time))
 	return rules, b.vm.getBlockValidator(rules).SyntacticVerify(b)
 }
 

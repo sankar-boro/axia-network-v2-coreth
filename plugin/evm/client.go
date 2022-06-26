@@ -9,13 +9,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/avalanchego/utils/rpc"
+	"github.com/ava-labs/axia/api"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/utils/crypto"
+	"github.com/ava-labs/axia/utils/formatting"
+	"github.com/ava-labs/axia/utils/rpc"
 
-	cjson "github.com/ava-labs/avalanchego/utils/json"
+	cjson "github.com/ava-labs/axia/utils/json"
 )
 
 // Interface compliance
@@ -134,7 +134,7 @@ func (c *client) ListAddresses(ctx context.Context, user api.UserPass) ([]string
 }
 
 // ExportKey returns the private key corresponding to [addr] controlled by [user]
-// in both Avalanche standard format and hex format
+// in both Axia standard format and hex format
 func (c *client) ExportKey(ctx context.Context, user api.UserPass, addr string) (*crypto.PrivateKeySECP256K1R, string, error) {
 	res := &ExportKeyReply{}
 	err := c.requester.SendRequest(ctx, "exportKey", &ExportKeyArgs{

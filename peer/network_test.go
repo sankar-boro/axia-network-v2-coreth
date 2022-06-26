@@ -12,14 +12,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/avalanchego/snow/engine/common"
+	"github.com/ava-labs/axia/snow/engine/common"
 
 	"github.com/ava-labs/coreth/plugin/evm/message"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/codec/linearcodec"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/version"
+	"github.com/ava-labs/axia/codec"
+	"github.com/ava-labs/axia/codec/linearcodec"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/version"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -43,7 +43,7 @@ var (
 func TestNetworkDoesNotConnectToItself(t *testing.T) {
 	selfNodeID := ids.GenerateTestNodeID()
 	n := NewNetwork(nil, nil, selfNodeID, 1)
-	assert.NoError(t, n.Connected(selfNodeID, version.NewDefaultApplication("avalanchego", 1, 0, 0)))
+	assert.NoError(t, n.Connected(selfNodeID, version.NewDefaultApplication("axia", 1, 0, 0)))
 	assert.EqualValues(t, 0, n.Size())
 }
 

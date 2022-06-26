@@ -12,7 +12,7 @@
 
 - Fix deadlock bug on shutdown causing historical re-generation on restart
 - Add API endpoint to fetch running VM Config
-- Add AvalancheGo custom log formatting to AXC-Chain logs
+- Add Axia custom log formatting to AXC-Chain logs
 - Deprecate support for JS Tracer
 
 ## [v0.8.8](https://github.com/ava-labs/coreth/releases/tag/v0.8.8)

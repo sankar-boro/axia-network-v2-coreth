@@ -4,9 +4,9 @@
 package evm
 
 import (
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/vms"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/snow"
+	"github.com/ava-labs/axia/vms"
 )
 
 var (

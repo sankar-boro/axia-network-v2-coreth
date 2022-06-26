@@ -15,16 +15,16 @@ import (
 	"github.com/ava-labs/coreth/core/state"
 	"github.com/ava-labs/coreth/params"
 
-	"github.com/ava-labs/avalanchego/chains/atomic"
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/utils"
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/utils/hashing"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
-	"github.com/ava-labs/avalanchego/vms/components/verify"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/ava-labs/axia/chains/atomic"
+	"github.com/ava-labs/axia/codec"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/snow"
+	"github.com/ava-labs/axia/utils"
+	"github.com/ava-labs/axia/utils/crypto"
+	"github.com/ava-labs/axia/utils/hashing"
+	"github.com/ava-labs/axia/utils/wrappers"
+	"github.com/ava-labs/axia/vms/components/verify"
+	"github.com/ava-labs/axia/vms/secp256k1fx"
 )
 
 var (

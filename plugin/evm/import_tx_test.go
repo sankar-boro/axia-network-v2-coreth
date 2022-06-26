@@ -10,12 +10,12 @@ import (
 	"github.com/ava-labs/coreth/params"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/ava-labs/avalanchego/chains/atomic"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/constants"
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/ava-labs/axia/chains/atomic"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/utils/constants"
+	"github.com/ava-labs/axia/utils/crypto"
+	"github.com/ava-labs/axia/vms/components/avax"
+	"github.com/ava-labs/axia/vms/secp256k1fx"
 )
 
 // createImportTxOptions adds a UTXO to shared memory and generates a list of import transactions sending this UTXO
@@ -101,7 +101,7 @@ func TestImportTxVerify(t *testing.T) {
 		Outs: []EVMOutput{
 			{
 				Address: testEthAddrs[0],
-				Amount:  importAmount - params.AvalancheAtomicTxFee,
+				Amount:  importAmount - params.AxiaAtomicTxFee,
 				AssetID: ctx.AVAXAssetID,
 			},
 			{

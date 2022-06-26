@@ -8,11 +8,11 @@ import (
 
 	"github.com/ava-labs/coreth/params"
 
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/components/chain"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/utils/crypto"
+	"github.com/ava-labs/axia/vms/components/avax"
+	"github.com/ava-labs/axia/vms/components/chain"
+	"github.com/ava-labs/axia/vms/secp256k1fx"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -190,14 +190,14 @@ func TestMempoolPriorityDrop(t *testing.T) {
 	mempool := vm.mempool
 	mempool.maxSize = 1
 
-	tx1 := createImportTx(t, vm, ids.ID{1}, params.AvalancheAtomicTxFee)
+	tx1 := createImportTx(t, vm, ids.ID{1}, params.AxiaAtomicTxFee)
 	assert.NoError(mempool.AddTx(tx1))
 	assert.True(mempool.has(tx1.ID()))
-	tx2 := createImportTx(t, vm, ids.ID{2}, params.AvalancheAtomicTxFee)
+	tx2 := createImportTx(t, vm, ids.ID{2}, params.AxiaAtomicTxFee)
 	assert.ErrorIs(mempool.AddTx(tx2), errInsufficientAtomicTxFee)
 	assert.True(mempool.has(tx1.ID()))
 	assert.False(mempool.has(tx2.ID()))
-	tx3 := createImportTx(t, vm, ids.ID{3}, 2*params.AvalancheAtomicTxFee)
+	tx3 := createImportTx(t, vm, ids.ID{3}, 2*params.AxiaAtomicTxFee)
 	assert.NoError(mempool.AddTx(tx3))
 	assert.False(mempool.has(tx1.ID()))
 	assert.False(mempool.has(tx2.ID()))

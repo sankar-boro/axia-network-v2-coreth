@@ -10,11 +10,11 @@ import (
 	"math/big"
 	"net/http"
 
-	"github.com/ava-labs/avalanchego/api"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/avalanchego/utils/json"
+	"github.com/ava-labs/axia/api"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/utils/crypto"
+	"github.com/ava-labs/axia/utils/formatting"
+	"github.com/ava-labs/axia/utils/json"
 	"github.com/ava-labs/coreth/params"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
@@ -66,7 +66,7 @@ func (api *SnowmanAPI) IssueBlock(ctx context.Context) error {
 	return nil
 }
 
-// AvaxAPI offers Avalanche network related API methods
+// AvaxAPI offers Axia network related API methods
 type AvaxAPI struct{ vm *VM }
 
 // parseAssetID parses an assetID string into an ID

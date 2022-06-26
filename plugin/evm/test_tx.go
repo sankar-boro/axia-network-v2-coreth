@@ -7,14 +7,14 @@ import (
 	"math/big"
 	"math/rand"
 
-	"github.com/ava-labs/avalanchego/utils"
+	"github.com/ava-labs/axia/utils"
 
-	"github.com/ava-labs/avalanchego/chains/atomic"
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/codec/linearcodec"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/ava-labs/axia/chains/atomic"
+	"github.com/ava-labs/axia/codec"
+	"github.com/ava-labs/axia/codec/linearcodec"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/snow"
+	"github.com/ava-labs/axia/utils/wrappers"
 	"github.com/ava-labs/coreth/core/state"
 	"github.com/ava-labs/coreth/params"
 )

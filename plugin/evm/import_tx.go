@@ -10,14 +10,14 @@ import (
 	"github.com/ava-labs/coreth/core/state"
 	"github.com/ava-labs/coreth/params"
 
-	"github.com/ava-labs/avalanchego/chains/atomic"
-	"github.com/ava-labs/avalanchego/ids"
-	"github.com/ava-labs/avalanchego/snow"
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/utils/math"
-	"github.com/ava-labs/avalanchego/vms/components/avax"
-	"github.com/ava-labs/avalanchego/vms/components/verify"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/ava-labs/axia/chains/atomic"
+	"github.com/ava-labs/axia/ids"
+	"github.com/ava-labs/axia/snow"
+	"github.com/ava-labs/axia/utils/crypto"
+	"github.com/ava-labs/axia/utils/math"
+	"github.com/ava-labs/axia/vms/components/avax"
+	"github.com/ava-labs/axia/vms/components/verify"
+	"github.com/ava-labs/axia/vms/secp256k1fx"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 )
@@ -185,7 +185,7 @@ func (tx *UnsignedImportTx) SemanticVerify(
 
 	// Apply fees to import transactions as of Apricot Phase 2
 	case rules.IsApricotPhase2:
-		fc.Produce(vm.ctx.AVAXAssetID, params.AvalancheAtomicTxFee)
+		fc.Produce(vm.ctx.AVAXAssetID, params.AxiaAtomicTxFee)
 	}
 	for _, out := range tx.Outs {
 		fc.Produce(out.AssetID, out.Amount)
@@ -367,8 +367,8 @@ func (vm *VM) newImportTxWithUTXOs(
 			return nil, err
 		}
 	case rules.IsApricotPhase2:
-		txFeeWithoutChange = params.AvalancheAtomicTxFee
-		txFeeWithChange = params.AvalancheAtomicTxFee
+		txFeeWithoutChange = params.AxiaAtomicTxFee
+		txFeeWithChange = params.AxiaAtomicTxFee
 	}
 
 	// AVAX output
