@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
 )
 
 type mockGasPriceSetter struct {

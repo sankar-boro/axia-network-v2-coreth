@@ -29,9 +29,9 @@ package ethconfig
 import (
 	"time"
 
-	"github.com/sankar-boro/coreth/core"
-	"github.com/sankar-boro/coreth/eth/gasprice"
-	"github.com/sankar-boro/coreth/miner"
+	"github.com/sankar-boro/axia-network-v2-coreth/core"
+	"github.com/sankar-boro/axia-network-v2-coreth/eth/gasprice"
+	"github.com/sankar-boro/axia-network-v2-coreth/miner"
 	"github.com/ethereum/go-ethereum/common"
 )
 

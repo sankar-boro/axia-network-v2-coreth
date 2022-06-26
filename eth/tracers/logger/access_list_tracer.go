@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/core/vm"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/vm"
 	"github.com/ethereum/go-ethereum/common"
 )
 

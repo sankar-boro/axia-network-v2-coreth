@@ -26,7 +26,7 @@
 
 package state
 
-import "github.com/sankar-boro/coreth/metrics"
+import "github.com/sankar-boro/axia-network-v2-coreth/metrics"
 
 var (
 	accountUpdatedMeter   = metrics.NewRegisteredMeter("state/update/account", nil)

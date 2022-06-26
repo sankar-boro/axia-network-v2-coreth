@@ -29,7 +29,7 @@ package rpc
 import (
 	"fmt"
 
-	"github.com/sankar-boro/coreth/metrics"
+	"github.com/sankar-boro/axia-network-v2-coreth/metrics"
 )
 
 var (

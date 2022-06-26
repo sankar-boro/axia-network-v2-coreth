@@ -8,12 +8,12 @@ import (
 	"sync"
 	"time"
 
-	coreth "github.com/sankar-boro/coreth/chain"
-	"github.com/sankar-boro/coreth/params"
+	coreth "github.com/sankar-boro/axia-network-v2-coreth/chain"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
 
-	"github.com/sankar-boro/axia/snow"
-	commonEng "github.com/sankar-boro/axia/snow/engine/common"
-	"github.com/sankar-boro/axia/utils/timer"
+	"github.com/sankar-boro/axia-network-v2/snow"
+	commonEng "github.com/sankar-boro/axia-network-v2/snow/engine/common"
+	"github.com/sankar-boro/axia-network-v2/utils/timer"
 	"github.com/ethereum/go-ethereum/log"
 )
 

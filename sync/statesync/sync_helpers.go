@@ -6,12 +6,12 @@ package statesync
 import (
 	"fmt"
 
-	"github.com/sankar-boro/coreth/core/rawdb"
-	"github.com/sankar-boro/coreth/core/state/snapshot"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/ethdb"
-	"github.com/sankar-boro/coreth/trie"
-	"github.com/sankar-boro/coreth/utils"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/rawdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/state/snapshot"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/trie"
+	"github.com/sankar-boro/axia-network-v2-coreth/utils"
 	"github.com/ethereum/go-ethereum/common"
 )
 

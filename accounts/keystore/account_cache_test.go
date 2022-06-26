@@ -37,7 +37,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sankar-boro/coreth/accounts"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts"
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/ethereum/go-ethereum/common"

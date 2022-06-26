@@ -31,7 +31,7 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
 )
 
 // Forks table defines supported forks and their chain config.

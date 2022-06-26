@@ -8,8 +8,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
 	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/stretchr/testify/assert"

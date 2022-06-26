@@ -34,11 +34,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/sankar-boro/axia/ids"
-	"github.com/sankar-boro/coreth/accounts/abi/bind"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/interfaces"
-	"github.com/sankar-boro/coreth/rpc"
+	"github.com/sankar-boro/axia-network-v2/ids"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi/bind"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/interfaces"
+	"github.com/sankar-boro/axia-network-v2-coreth/rpc"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 )

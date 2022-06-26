@@ -7,12 +7,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/sankar-boro/axia/codec"
+	"github.com/sankar-boro/axia-network-v2/codec"
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/sankar-boro/axia/ids"
-	"github.com/sankar-boro/axia/utils/units"
+	"github.com/sankar-boro/axia-network-v2/ids"
+	"github.com/sankar-boro/axia-network-v2/utils/units"
 )
 
 const (

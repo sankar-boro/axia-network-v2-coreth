@@ -4,7 +4,7 @@
 GOPATH="$(go env GOPATH)"
 
 # Set binary location
-binary_path=${CORETH_BINARY_PATH:-"$GOPATH/src/github.com/sankar-boro/axia/build/plugins/evm"}
+binary_path=${CORETH_BINARY_PATH:-"$GOPATH/src/github.com/sankar-boro/axia-network-v2/build/plugins/evm"}
 
 # Avalabs docker hub
 dockerhub_repo="avaplatform/axia"

@@ -7,8 +7,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/sankar-boro/axia/utils/formatting"
-	"github.com/sankar-boro/coreth/core"
+	"github.com/sankar-boro/axia-network-v2/utils/formatting"
+	"github.com/sankar-boro/axia-network-v2-coreth/core"
 )
 
 // StaticService defines the static API services exposed by the evm

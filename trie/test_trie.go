@@ -10,9 +10,9 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/sankar-boro/axia/utils/wrappers"
-	"github.com/sankar-boro/coreth/accounts/keystore"
-	"github.com/sankar-boro/coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2/utils/wrappers"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/keystore"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/rlp"

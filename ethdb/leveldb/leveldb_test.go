@@ -29,8 +29,8 @@ package leveldb
 import (
 	"testing"
 
-	"github.com/sankar-boro/coreth/ethdb"
-	"github.com/sankar-boro/coreth/ethdb/dbtest"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb/dbtest"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/storage"
 )

@@ -20,10 +20,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/sankar-boro/coreth/core/bloombits"
-	"github.com/sankar-boro/coreth/core/rawdb"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/ethdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/bloombits"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/rawdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/bitutil"
 )

@@ -12,14 +12,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sankar-boro/axia/snow/engine/common"
+	"github.com/sankar-boro/axia-network-v2/snow/engine/common"
 
-	"github.com/sankar-boro/coreth/plugin/evm/message"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm/message"
 
-	"github.com/sankar-boro/axia/codec"
-	"github.com/sankar-boro/axia/codec/linearcodec"
-	"github.com/sankar-boro/axia/ids"
-	"github.com/sankar-boro/axia/version"
+	"github.com/sankar-boro/axia-network-v2/codec"
+	"github.com/sankar-boro/axia-network-v2/codec/linearcodec"
+	"github.com/sankar-boro/axia-network-v2/ids"
+	"github.com/sankar-boro/axia-network-v2/version"
 	"github.com/stretchr/testify/assert"
 )
 

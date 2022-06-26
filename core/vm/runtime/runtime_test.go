@@ -34,21 +34,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sankar-boro/coreth/accounts/abi"
-	"github.com/sankar-boro/coreth/consensus"
-	"github.com/sankar-boro/coreth/core"
-	"github.com/sankar-boro/coreth/core/rawdb"
-	"github.com/sankar-boro/coreth/core/state"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/core/vm"
-	"github.com/sankar-boro/coreth/eth/tracers"
-	"github.com/sankar-boro/coreth/eth/tracers/logger"
-	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi"
+	"github.com/sankar-boro/axia-network-v2-coreth/consensus"
+	"github.com/sankar-boro/axia-network-v2-coreth/core"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/rawdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/state"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/vm"
+	"github.com/sankar-boro/axia-network-v2-coreth/eth/tracers"
+	"github.com/sankar-boro/axia-network-v2-coreth/eth/tracers/logger"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/asm"
 
 	// force-load native tracers to trigger registration
-	_ "github.com/sankar-boro/coreth/eth/tracers/native"
+	_ "github.com/sankar-boro/axia-network-v2-coreth/eth/tracers/native"
 )
 
 func TestDefaults(t *testing.T) {

@@ -11,15 +11,15 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/sankar-boro/axia/database/memdb"
-	"github.com/sankar-boro/axia/database/versiondb"
+	"github.com/sankar-boro/axia-network-v2/database/memdb"
+	"github.com/sankar-boro/axia-network-v2/database/versiondb"
 
-	"github.com/sankar-boro/coreth/ethdb/memorydb"
-	"github.com/sankar-boro/coreth/plugin/evm/message"
-	syncclient "github.com/sankar-boro/coreth/sync/client"
-	"github.com/sankar-boro/coreth/sync/handlers"
-	handlerstats "github.com/sankar-boro/coreth/sync/handlers/stats"
-	"github.com/sankar-boro/coreth/trie"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb/memorydb"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm/message"
+	syncclient "github.com/sankar-boro/axia-network-v2-coreth/sync/client"
+	"github.com/sankar-boro/axia-network-v2-coreth/sync/handlers"
+	handlerstats "github.com/sankar-boro/axia-network-v2-coreth/sync/handlers/stats"
+	"github.com/sankar-boro/axia-network-v2-coreth/trie"
 	"github.com/ethereum/go-ethereum/common"
 )
 

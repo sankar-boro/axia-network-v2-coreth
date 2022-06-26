@@ -28,16 +28,16 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sankar-boro/axia/utils/timer/mockable"
-	"github.com/sankar-boro/coreth/accounts/keystore"
-	"github.com/sankar-boro/coreth/consensus/dummy"
-	"github.com/sankar-boro/coreth/core"
-	"github.com/sankar-boro/coreth/core/rawdb"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/core/vm"
-	"github.com/sankar-boro/coreth/eth"
-	"github.com/sankar-boro/coreth/eth/ethconfig"
-	"github.com/sankar-boro/coreth/node"
+	"github.com/sankar-boro/axia-network-v2/utils/timer/mockable"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/keystore"
+	"github.com/sankar-boro/axia-network-v2-coreth/consensus/dummy"
+	"github.com/sankar-boro/axia-network-v2-coreth/core"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/rawdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/vm"
+	"github.com/sankar-boro/axia-network-v2-coreth/eth"
+	"github.com/sankar-boro/axia-network-v2-coreth/eth/ethconfig"
+	"github.com/sankar-boro/axia-network-v2-coreth/node"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
@@ -73,7 +73,7 @@ func TestMulticoin(t *testing.T) {
 	//if gopath == "" {
 	//	gopath = build.Default.GOPATH
 	//}
-	//counterSrc, err := filepath.Abs(gopath + "/src/github.com/sankar-boro/coreth/examples/multicoin/mc_test.sol")
+	//counterSrc, err := filepath.Abs(gopath + "/src/github.com/sankar-boro/axia-network-v2-coreth/examples/multicoin/mc_test.sol")
 	//if err != nil {
 	// 	t.Fatal(err)
 	// }

@@ -51,7 +51,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/sankar-boro/coreth/accounts"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/event"
 	"github.com/ethereum/go-ethereum/log"

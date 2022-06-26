@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/sankar-boro/coreth/rpc"
+	"github.com/sankar-boro/axia-network-v2-coreth/rpc"
 	"github.com/ethereum/go-ethereum/common"
 )
 

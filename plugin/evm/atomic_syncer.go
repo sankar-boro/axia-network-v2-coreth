@@ -9,10 +9,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/sankar-boro/axia/utils/wrappers"
+	"github.com/sankar-boro/axia-network-v2/utils/wrappers"
 
-	"github.com/sankar-boro/coreth/plugin/evm/message"
-	syncclient "github.com/sankar-boro/coreth/sync/client"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm/message"
+	syncclient "github.com/sankar-boro/axia-network-v2-coreth/sync/client"
 	"github.com/ethereum/go-ethereum/common"
 )
 

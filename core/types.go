@@ -27,9 +27,9 @@
 package core
 
 import (
-	"github.com/sankar-boro/coreth/core/state"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/core/vm"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/state"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

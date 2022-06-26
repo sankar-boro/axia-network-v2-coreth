@@ -30,10 +30,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/sankar-boro/coreth/consensus/dummy"
-	"github.com/sankar-boro/coreth/core/rawdb"
-	"github.com/sankar-boro/coreth/core/vm"
-	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/consensus/dummy"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/rawdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/vm"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
 	"github.com/ethereum/go-ethereum/common"
 )
 

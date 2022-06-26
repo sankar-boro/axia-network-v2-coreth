@@ -9,13 +9,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	safemath "github.com/sankar-boro/axia/utils/math"
+	safemath "github.com/sankar-boro/axia-network-v2/utils/math"
 
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/params"
-	"github.com/sankar-boro/coreth/trie"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/trie"
 
-	coreth "github.com/sankar-boro/coreth/chain"
+	coreth "github.com/sankar-boro/axia-network-v2-coreth/chain"
 )
 
 var (

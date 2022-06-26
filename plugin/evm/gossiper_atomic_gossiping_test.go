@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sankar-boro/axia/ids"
+	"github.com/sankar-boro/axia-network-v2/ids"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/sankar-boro/coreth/plugin/evm/message"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm/message"
 )
 
 // locally issued txs should be gossiped

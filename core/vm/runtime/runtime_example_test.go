@@ -29,7 +29,7 @@ package runtime_test
 import (
 	"fmt"
 
-	"github.com/sankar-boro/coreth/core/vm/runtime"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/vm/runtime"
 	"github.com/ethereum/go-ethereum/common"
 )
 

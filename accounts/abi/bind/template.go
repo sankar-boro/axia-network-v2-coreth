@@ -26,7 +26,7 @@
 
 package bind
 
-import "github.com/sankar-boro/coreth/accounts/abi"
+import "github.com/sankar-boro/axia-network-v2-coreth/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -102,10 +102,10 @@ import (
 	"strings"
 	"errors"
 
-	"github.com/sankar-boro/coreth/accounts/abi"
-	"github.com/sankar-boro/coreth/accounts/abi/bind"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/interfaces"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi/bind"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/interfaces"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/event"
 )

@@ -6,9 +6,9 @@ package peer
 import (
 	"errors"
 
-	"github.com/sankar-boro/axia/ids"
+	"github.com/sankar-boro/axia-network-v2/ids"
 
-	"github.com/sankar-boro/axia/version"
+	"github.com/sankar-boro/axia-network-v2/version"
 )
 
 var (

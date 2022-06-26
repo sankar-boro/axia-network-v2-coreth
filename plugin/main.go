@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sankar-boro/axia/utils/logging"
-	"github.com/sankar-boro/axia/utils/ulimit"
-	"github.com/sankar-boro/axia/vms/rpcchainvm"
+	"github.com/sankar-boro/axia-network-v2/utils/logging"
+	"github.com/sankar-boro/axia-network-v2/utils/ulimit"
+	"github.com/sankar-boro/axia-network-v2/vms/rpcchainvm"
 
-	"github.com/sankar-boro/coreth/plugin/evm"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm"
 )
 
 func main() {

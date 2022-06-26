@@ -35,6 +35,6 @@ RUN mkdir -p /axia/build
 WORKDIR /axia/build
 
 # Copy the executables into the container
-COPY --from=builder /go/src/github.com/sankar-boro/axia/build .
+COPY --from=builder /go/src/github.com/sankar-boro/axia-network-v2/build .
 
 CMD [ "./axia" ]

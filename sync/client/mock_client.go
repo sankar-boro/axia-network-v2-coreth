@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/sankar-boro/axia/codec"
-	"github.com/sankar-boro/axia/ids"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/plugin/evm/message"
-	"github.com/sankar-boro/coreth/sync/handlers"
+	"github.com/sankar-boro/axia-network-v2/codec"
+	"github.com/sankar-boro/axia-network-v2/ids"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm/message"
+	"github.com/sankar-boro/axia-network-v2-coreth/sync/handlers"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/rlp"
 )

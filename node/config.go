@@ -32,10 +32,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/sankar-boro/coreth/accounts"
-	"github.com/sankar-boro/coreth/accounts/external"
-	"github.com/sankar-boro/coreth/accounts/keystore"
-	"github.com/sankar-boro/coreth/rpc"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/external"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/keystore"
+	"github.com/sankar-boro/axia-network-v2-coreth/rpc"
 	"github.com/ethereum/go-ethereum/log"
 )
 

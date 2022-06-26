@@ -7,9 +7,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/sankar-boro/axia/database/encdb"
-	"github.com/sankar-boro/axia/ids"
-	"github.com/sankar-boro/axia/utils/crypto"
+	"github.com/sankar-boro/axia-network-v2/database/encdb"
+	"github.com/sankar-boro/axia-network-v2/ids"
+	"github.com/sankar-boro/axia-network-v2/utils/crypto"
 	"github.com/ethereum/go-ethereum/common"
 )
 

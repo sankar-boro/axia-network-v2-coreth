@@ -6,7 +6,7 @@ package evm
 import (
 	"container/heap"
 
-	"github.com/sankar-boro/axia/ids"
+	"github.com/sankar-boro/axia-network-v2/ids"
 )
 
 // txEntry is used to track the [gasPrice] transactions pay to be included in

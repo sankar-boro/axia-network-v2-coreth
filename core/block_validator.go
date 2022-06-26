@@ -29,11 +29,11 @@ package core
 import (
 	"fmt"
 
-	"github.com/sankar-boro/coreth/consensus"
-	"github.com/sankar-boro/coreth/core/state"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/params"
-	"github.com/sankar-boro/coreth/trie"
+	"github.com/sankar-boro/axia-network-v2-coreth/consensus"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/state"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/trie"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

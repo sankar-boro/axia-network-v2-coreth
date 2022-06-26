@@ -27,8 +27,8 @@
 package node
 
 import (
-	"github.com/sankar-boro/coreth/internal/debug"
-	"github.com/sankar-boro/coreth/rpc"
+	"github.com/sankar-boro/axia-network-v2-coreth/internal/debug"
+	"github.com/sankar-boro/axia-network-v2-coreth/rpc"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
 )

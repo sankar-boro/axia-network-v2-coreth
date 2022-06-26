@@ -47,7 +47,7 @@ package native
 import (
 	"errors"
 
-	"github.com/sankar-boro/coreth/eth/tracers"
+	"github.com/sankar-boro/axia-network-v2-coreth/eth/tracers"
 )
 
 // init registers itself this packages as a lookup for tracers.

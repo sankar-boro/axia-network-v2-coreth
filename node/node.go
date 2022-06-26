@@ -27,8 +27,8 @@
 package node
 
 import (
-	"github.com/sankar-boro/coreth/accounts"
-	"github.com/sankar-boro/coreth/rpc"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts"
+	"github.com/sankar-boro/axia-network-v2-coreth/rpc"
 )
 
 // Node is a container on which services can be registered.

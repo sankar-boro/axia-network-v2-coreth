@@ -27,7 +27,7 @@
 package node
 
 import (
-	"github.com/sankar-boro/coreth/rpc"
+	"github.com/sankar-boro/axia-network-v2-coreth/rpc"
 )
 
 const (

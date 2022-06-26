@@ -33,10 +33,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sankar-boro/coreth/accounts/abi/bind"
-	"github.com/sankar-boro/coreth/accounts/abi/bind/backends"
-	"github.com/sankar-boro/coreth/core"
-	"github.com/sankar-boro/coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi/bind"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi/bind/backends"
+	"github.com/sankar-boro/axia-network-v2-coreth/core"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 )

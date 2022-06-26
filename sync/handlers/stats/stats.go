@@ -6,7 +6,7 @@ package stats
 import (
 	"time"
 
-	"github.com/sankar-boro/coreth/metrics"
+	"github.com/sankar-boro/axia-network-v2-coreth/metrics"
 )
 
 // HandlerStats reports prometheus metrics for the state sync handlers

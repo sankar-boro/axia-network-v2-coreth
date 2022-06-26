@@ -35,9 +35,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/sankar-boro/coreth/accounts/abi"
-	"github.com/sankar-boro/coreth/accounts/abi/bind"
-	"github.com/sankar-boro/coreth/internal/flags"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi"
+	"github.com/sankar-boro/axia-network-v2-coreth/accounts/abi/bind"
+	"github.com/sankar-boro/axia-network-v2-coreth/internal/flags"
 	"github.com/ethereum/go-ethereum/cmd/utils"
 	"github.com/ethereum/go-ethereum/common/compiler"
 	"github.com/ethereum/go-ethereum/crypto"

@@ -9,23 +9,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/sankar-boro/axia/codec"
+	"github.com/sankar-boro/axia-network-v2/codec"
 
-	"github.com/sankar-boro/coreth/peer"
+	"github.com/sankar-boro/axia-network-v2-coreth/peer"
 
-	"github.com/sankar-boro/axia/cache"
-	"github.com/sankar-boro/axia/ids"
-	"github.com/sankar-boro/axia/snow"
-	"github.com/sankar-boro/axia/utils/wrappers"
+	"github.com/sankar-boro/axia-network-v2/cache"
+	"github.com/sankar-boro/axia-network-v2/ids"
+	"github.com/sankar-boro/axia-network-v2/snow"
+	"github.com/sankar-boro/axia-network-v2/utils/wrappers"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rlp"
 
-	"github.com/sankar-boro/coreth/core"
-	"github.com/sankar-boro/coreth/core/state"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/plugin/evm/message"
+	"github.com/sankar-boro/axia-network-v2-coreth/core"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/state"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm/message"
 )
 
 const (

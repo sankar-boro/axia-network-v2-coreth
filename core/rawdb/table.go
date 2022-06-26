@@ -27,7 +27,7 @@
 package rawdb
 
 import (
-	"github.com/sankar-boro/coreth/ethdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb"
 )
 
 // table is a wrapper around a database that prefixes each key access with a pre-

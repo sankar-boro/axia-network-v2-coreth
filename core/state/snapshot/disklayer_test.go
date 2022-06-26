@@ -30,9 +30,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/sankar-boro/coreth/core/rawdb"
-	"github.com/sankar-boro/coreth/ethdb"
-	"github.com/sankar-boro/coreth/ethdb/memorydb"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/rawdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb"
+	"github.com/sankar-boro/axia-network-v2-coreth/ethdb/memorydb"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/rlp"
 )

@@ -31,9 +31,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/sankar-boro/coreth/core/state"
-	"github.com/sankar-boro/coreth/core/types"
-	"github.com/sankar-boro/coreth/params"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/state"
+	"github.com/sankar-boro/axia-network-v2-coreth/core/types"
+	"github.com/sankar-boro/axia-network-v2-coreth/params"
 )
 
 var (

@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/sankar-boro/coreth/metrics"
-	"github.com/sankar-boro/coreth/plugin/evm/message"
+	"github.com/sankar-boro/axia-network-v2-coreth/metrics"
+	"github.com/sankar-boro/axia-network-v2-coreth/plugin/evm/message"
 )
 
 var (
