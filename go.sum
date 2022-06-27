@@ -518,6 +518,8 @@ github.com/sankar-boro/axia-network-v2 v0.0.0-20220626081201-2546a7cf6fc0 h1:PCc
 github.com/sankar-boro/axia-network-v2 v0.0.0-20220626081201-2546a7cf6fc0/go.mod h1:2TR2sznN004q32JDe9iI21e2vbZatXQ37aUvB3J/UY0=
 github.com/sankar-boro/axia-network-v2 v0.0.0-20220627003427-a5f150137e6b h1:LWT8z0E0/vNZwlXvHzj3iw+IXiPLibgLuAiPPaq0Ka0=
 github.com/sankar-boro/axia-network-v2 v0.0.0-20220627003427-a5f150137e6b/go.mod h1:8juTVDjTIJQX08XwwUXEA/SWV2oBcVX1pwOdNJRX1rU=
+github.com/sankar-boro/axia-network-v2 v0.0.0-20220627010352-b78c1b0d1499 h1:CjFquwQwyfFU++ggxRozEeft61lfHp3m+j9iQvPGnfc=
+github.com/sankar-boro/axia-network-v2 v0.0.0-20220627010352-b78c1b0d1499/go.mod h1:D4zh/muYO3RMgjp55ZPhc6X5GZCT0ntiGRFNYndKCDs=
 github.com/sankar-boro/axia-network-v2-coreth v0.1.0 h1:BY41xoFtnIS5MyL4kNwk3quUal0EecyQvN5KwpLmMXc=
 github.com/segmentio/kafka-go v0.1.0/go.mod h1:X6itGqS9L4jDletMsxZ7Dz+JFWxM6JHfPOCvTvk+EJo=
 github.com/segmentio/kafka-go v0.2.0/go.mod h1:X6itGqS9L4jDletMsxZ7Dz+JFWxM6JHfPOCvTvk+EJo=
