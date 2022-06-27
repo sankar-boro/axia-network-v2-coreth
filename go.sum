@@ -516,6 +516,8 @@ github.com/russross/blackfriday/v2 v2.0.1/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQD
 github.com/ruudk/golang-pdf417 v0.0.0-20181029194003-1af4ab5afa58/go.mod h1:6lfFZQK844Gfx8o5WFuvpxWRwnSoipWe/p622j1v06w=
 github.com/sankar-boro/axia-network-v2 v0.0.0-20220626081201-2546a7cf6fc0 h1:PCcj0WMwwALGIorMvR3E5HnKXBf2fHkvCbqoTETqht8=
 github.com/sankar-boro/axia-network-v2 v0.0.0-20220626081201-2546a7cf6fc0/go.mod h1:2TR2sznN004q32JDe9iI21e2vbZatXQ37aUvB3J/UY0=
+github.com/sankar-boro/axia-network-v2 v0.0.0-20220627003427-a5f150137e6b h1:LWT8z0E0/vNZwlXvHzj3iw+IXiPLibgLuAiPPaq0Ka0=
+github.com/sankar-boro/axia-network-v2 v0.0.0-20220627003427-a5f150137e6b/go.mod h1:8juTVDjTIJQX08XwwUXEA/SWV2oBcVX1pwOdNJRX1rU=
 github.com/sankar-boro/axia-network-v2-coreth v0.1.0 h1:BY41xoFtnIS5MyL4kNwk3quUal0EecyQvN5KwpLmMXc=
 github.com/segmentio/kafka-go v0.1.0/go.mod h1:X6itGqS9L4jDletMsxZ7Dz+JFWxM6JHfPOCvTvk+EJo=
 github.com/segmentio/kafka-go v0.2.0/go.mod h1:X6itGqS9L4jDletMsxZ7Dz+JFWxM6JHfPOCvTvk+EJo=

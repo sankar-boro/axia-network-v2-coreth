@@ -23,7 +23,7 @@ require (
 	github.com/prometheus/client_golang v1.12.2
 	github.com/prometheus/client_model v0.2.0
 	github.com/rjeczalik/notify v0.9.2
-	github.com/sankar-boro/axia-network-v2 v0.0.0-20220626081201-2546a7cf6fc0
+	github.com/sankar-boro/axia-network-v2 v0.0.0-20220627003427-a5f150137e6b
 	github.com/shirou/gopsutil v3.21.4-0.20210419000835-c7a38de76ee5+incompatible
 	github.com/spf13/cast v1.4.1
 	github.com/spf13/pflag v1.0.5
